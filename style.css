@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h2 {
+  color: darkgreen;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: honeydew;
+}
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.logo,
+#login {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+}
+#logoImg {
+  width: 50px;
+  height: 50px;
+}
+.user-icon {
+  width: 30px;
+  height: 30px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  background-color: rgb(184, 241, 184);
+  top: 0;
+  padding: 8px 20px;
+}
+header nav,
+#Register {
+  visibility: hidden;
+  height: 0;
+}
+header figcaption {
+  font-size: 20px;
+  font-weight: bold;
+}
+#home {
+  background-image: url(./background.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: honeydew;
+  flex-direction: column;
+  gap: 20px;
+  padding: 120px 60px;
+}
+#home p {
+  text-align: center;
+}
+h1 {
+  font-size: 50px;
+}
+button {
+  background-color: transparent;
+  border: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: honeydew;
+  border-radius: 15px;
+  padding: 7px 10px;
+  color: darkgreen;
+}
+#story {
+  text-align: center;
+  margin-top: 40px;
+  padding: 8px 10px;
+}
+#spanStory {
+  width: auto;
+  transition: all 0.3s ease;
+}
+#spanStory:hover {
+  color: honeydew;
+  background-color: darkgreen;
+  border-radius: 15px;
+  padding: 7px 10px;
+}
+#icons {
+  padding: 8px 10px;
+}
+#icons h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+.list {
+  display: grid;
+  gap: 15px;
+  list-style-type: none;
+  grid-template-columns: 1fr 1fr;
+}
+.list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.list p {
+  text-align: center;
+}
+.list img {
+  width: 90px;
+  height: 90px;
+  transition: all 0.3s ease;
+}
+.list img:hover {
+  width: 100px;
+  height: 100px;
+}
+h4 {
+  color: darkgreen;
+  font-size: 17px;
+}
+#ourShop {
+  padding: 8px 10px;
+}
+.shop {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.shop a {
+  transition: all 0.3s ease;
+}
+.shop a:hover {
+  color: honeydew;
+  background-color: darkgreen;
+  border-radius: 15px;
+  padding: 7px 10px;
+}
+.scroll-pics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 8px 10px;
+  overflow-x: auto;
+  margin-top: 30px;
+}
+.scroll-pics figcaption div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.scroll-pics figcaption span {
+  color: darkgreen;
+  font-weight: 600;
+}
+.scroll-pics figcaption p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.shop-image {
+  width: 180px;
+  height: 210px;
+  border-color: honeydew;
+  border-radius: 5px;
+}
+.scroll-pics figure {
+  transition: all 0.3s ease;
+}
+.scroll-pics figure:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#plantVideo {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 10px;
+}
+
+#plantVideo h2 {
+  font-size: 32px;
+  margin-top: 10px;
+}
+#plantVideo span {
+  transition: all 0.3s ease;
+}
+#plantVideo span:hover {
+  color: honeydew;
+  background-color: darkgreen;
+  border-radius: 15px;
+  padding: 7px 10px;
+}
+video {
+  margin-top: 30px;
+}
+#about {
+  padding: 8px 10px;
+  margin-top: 50px;
+}
+#about h2 {
+  text-align: center;
+}
+#about picture {
+  width: 80%;
+}
+#about img {
+  margin-top: 20px;
+  width: 100%;
+}
+
+#code {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 10px;
+}
+#code h4 {
+  font-size: 25px;
+}
+#promoCode {
+  background-color: honeydew;
+  border-color: green;
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+#submit {
+  padding: 8px 10px;
+  background-color: honeydew;
+  border-radius: 10px;
+  border: transparent;
+  transition: all 0.3s ease;
+}
+#submit:hover {
+  background-color: darkgreen;
+  color: honeydew;
+}
+
+footer {
+  background-color: honeydew;
+  color: white;
+  overflow-x: hidden;
+}
+footer > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 30px;
+  gap: 30px;
+  list-style-type: none;
+}
+
+footer li ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(12, 13, 12);
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: darkgreen;
+  opacity: 0.7;
+}
+footer figcaption {
+  font-size: 20px;
+  font-weight: bold;
+}
+footer h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.deco {
+  width: 170px;
+  height: 150px;
+  position: relative;
+  right: 50px;
+  bottom: 40px;
+  margin-bottom: 0;
+}
+.decor {
+  visibility: hidden;
+  display: none;
+}
+
+@media (min-width: 600px) {
+  header nav,
+  #Register {
+    visibility: visible;
+    height: auto;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+  }
+  #login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header a {
+    text-decoration: none;
+    color: rgb(12, 13, 12);
+    transition: color 0.3s ease;
+  }
+  header a:hover {
+    color: darkgreen;
+    opacity: 0.7;
+  }
+}
+@media (min-width: 1024px) {
+  .nav-links {
+    gap: 17px;
+  }
+  .list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  footer > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+  footer figcaption {
+    font-size: 24px;
+  }
+  footer h4 {
+    font-size: 24px;
+  }
+  footer li {
+    line-height: 1.9;
+  }
+  .decor {
+    width: 140px;
+    height: 200px;
+    position: relative;
+    left: 1250px;
+    bottom: 70px;
+    margin-bottom: 0;
+  }
+  .shop-image {
+    width: 200px;
+    height: 240px;
+    border-color: honeydew;
+    border-radius: 5px;
+  }
+  #plantVideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+  #plantVideo aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  #plantVideo p,
+  #plantVideo span {
+    font-size: 18px;
+  }
+}
