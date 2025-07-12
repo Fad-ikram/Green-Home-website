@@ -8,13 +8,29 @@
   </head>
   <body>
     <header>
-      <div id="login">
-        <img
-          src="./assets/user-svgrepo-com.svg"
-          alt="icon user"
-          class="user-icon"
-        />
-        <a id="Register" href="#Login">Login / Register</a>
+      <div class="links">
+        <div id="login">
+          <a href=""
+            ><img src="./assets/user-svgrepo-com.svg" alt="" class="user-icon"
+          /></a>
+          <a id="Register" href="#Login">Login / Register</a>
+        </div>
+        <div class="ourShop">
+          <a href=""
+            ><img
+              src="./assets/shop-business-delivery-svgrepo-com.svg"
+              alt="shop icon"
+              class="shop-icon"
+          /></a>
+          <a id="shop" href="">Our Shop</a>
+        </div>
+        <a href=""
+          ><img
+            src="./assets/search-svgrepo-com.svg"
+            alt="search icon"
+            class="search-icon"
+          />
+        </a>
       </div>
       <figure class="logo">
         <picture>
@@ -28,20 +44,33 @@
       </figure>
       <nav>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#ourShop">Our Shop</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ourShop">Our Shop</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </div>
+          <li>
+            <img id="menu" src="./assets/menu-svgrepo-com (1).svg" alt="" />
+          </li>
         </ul>
       </nav>
     </header>
     <main>
+      <section id="search">
+        <input type="text" placeholder="Search " />
+        <img
+          src="./assets/search-svgrepo-com.svg"
+          alt="search icon"
+          class="search"
+        />
+      </section>
       <section id="home">
         <h1>Green Home</h1>
         <p>Your one-stop shop for all things green and organic</p>
         <button>Learn More</button>
       </section>
-      <section id="story">
+      <section class="story" id="storySection">
         <span id="spanStory">Our Story</span>
         <h2>My Green Home</h2>
         <p>
@@ -86,16 +115,22 @@
           </li>
         </ul>
       </section>
+
+      <section id="plantVideo">
+        <video controls>
+          <source src="./assets/A Plants Journey Home.mp4" type="video/mp4" />
+        </video>
+      </section>
       <section id="ourShop">
         <div class="shop">
           <h2>Our Shop</h2>
           <a href="#shop">Shop Now</a>
-        </div>
+        
         <p>
           Explore our wide range of organic products, from home decor to
           gardening supplies. We are committed to providing you with the best
           quality products that are good for you and the planet.
-        </p>
+        </p></div>
         <div class="scroll-pics">
           <figure>
             <picture class="shop-item">
@@ -289,22 +324,6 @@
           </figure>
         </div>
       </section>
-      <section id="plantVideo">
-        <aside>
-          <div id="video">
-            <h2>A Houseplant's Journey Home</h2>
-            <span>life gathers around plants</span>
-          </div>
-          <p>
-            Follow along on a Bird of Paradise’s journey from our greenhouse to
-            your home, and learn how we care for your plant every step of the
-            way.
-          </p>
-        </aside>
-        <video controls>
-          <source src="./assets/A Plants Journey Home.mp4" type="video/mp4" />
-        </video>
-      </section>
       <section id="about">
         <h2>About Us</h2>
         <p>
@@ -314,13 +333,25 @@
           believe in transparency and sustainability, and we are committed to
           making a positive impact on the environment.
         </p>
-        <picture>
+        <picture class="plants-image">
           <img
             src="./assets/Frame 42.png"
             alt="Green Home Plants"
-            class="plants-image"
+            
           />
         </picture>
+      </section>
+
+      <section class="story" id="story">
+        <span id="spanStory">Our Story</span>
+        <h2>My Green Home</h2>
+        <p>
+          Welcome to My Green Home, where we believe in creating a sustainable
+          and eco-friendly living space. Our journey began with a passion for
+          nature and a commitment to reducing our carbon footprint. We offer a
+          wide range of organic products, from home decor to gardening supplies,
+          all designed to help you live a greener life.
+        </p>
       </section>
       <hr />
       <section id="code">
@@ -337,22 +368,9 @@
     </main>
     <hr />
     <footer>
-      <ul>
-        <li>
-          <figure class="logo">
-            <picture>
-              <img
-                id="logoImg"
-                src="./assets/logo-removebg-preview.png"
-                alt=" Green Home logo"
-                width="200px"
-              />
-            </picture>
-            <figcaption style="color: darkgreen">Green Home</figcaption>
-          </figure>
-          <p></p>
-        </li>
+     
 
+      <ul>
         <li>
           <h4>Company</h4>
           <ul class="quick-links">
@@ -379,20 +397,28 @@
           </ul>
         </li>
       </ul>
-      <img class="deco" src="./assets/deco.png" alt="" />
-      <img
-        class="decor"
-        src="./assets/4cd34ce2e94732a37457958838a62f8945c3d42d.png"
-        alt=""
-      />
+
+      <img src="./assets/decoFooter.png" alt="" class="footerdeco" />
+      <figure class="logo">
+        <picture>
+          <img
+            id="logoImg"
+            src="./assets/logo-removebg-preview.png"
+            alt=" Green Home logo"
+            width="200px"
+          />
+        </picture>
+        <figcaption style="color: darkgreen">Green Home</figcaption>
+      </figure>
+
       <hr
         style="
-          margin: 30px;
-          margin-top: 0;
+          margin-left: 20px;
+          margin-right: 20px;
           border-color: rgba(163, 208, 163, 0.8);
         "
       />
-      <p style="text-align: center; padding: 30px; color: black">
+      <p style="text-align: center; padding: 10px; color: black">
         © Copyright2024-2025.
       </p>
     </footer>
